@@ -9,35 +9,12 @@ $spacing-unit: 30px;
 
 @import "minima";
 
-/* Match joekoshakow.com home table: no borders */
+/* Desktop home: Joe-style table only (no forced image size) */
 table.tab,
 table.tab td,
 table.tab th {
   border: none !important;
   background: transparent !important;
-}
-
-table.tab {
-  width: 100%;
-}
-
-table.tab td.first {
-  width: 35%;
-  vertical-align: top;
-  padding-right: 1.25rem;
-}
-
-table.tab td.second {
-  vertical-align: top;
-}
-
-table.tab td.first img {
-  display: block;
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Enforce wider wrapper (Minima hardcodes 800px in places) */
@@ -53,7 +30,7 @@ table.tab td.first img {
   }
 }
 
-/* Stack photo + bio on phones (fixes squeezed text column) */
+/* Stack photo + bio on phones only */
 @media screen and (max-width: 600px) {
   table.tab,
   table.tab tbody,
@@ -72,6 +49,7 @@ table.tab td.first img {
     display: block;
     max-width: 220px;
     width: 55%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
