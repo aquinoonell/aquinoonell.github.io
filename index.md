@@ -3,12 +3,6 @@ layout: default
 permalink: /
 ---
 
-<style>
-table, td, th {
-   border: none!important;
-}
-</style>
-
 <div class="home">
 <table class="tab">
     <tr>
