@@ -1,0 +1,26 @@
+title: Onell Aquino
+email: onellaquino@icloud.com
+description: >-
+  Onell Aquino’s personal software development website.
+baseurl: ""
+url: "https://aquinoonell.github.io"
+
+github_username: aquinoonell
+linkedin_username: onell-aquino
+
+# Match joekoshakow.com-style nav
+header_pages:
+  - education.md
+  - experience.md
+  - projects.md
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

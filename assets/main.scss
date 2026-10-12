@@ -1,0 +1,30 @@
+---
+---
+
+// Wider content column than Minima's default 800px, slightly larger type
+$content-width: 1000px;
+$base-font-size: 18px;
+$base-line-height: 1.55;
+$spacing-unit: 30px;
+
+@import "minima";
+
+/* Match joekoshakow.com home table: no borders */
+table.tab,
+table.tab td,
+table.tab th {
+  border: none !important;
+}
+
+/* Enforce wider wrapper (Minima hardcodes 800px in places) */
+.wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+}
+
+@media screen and (max-width: #{$content-width}) {
+  .wrapper {
+    max-width: calc(#{$content-width} - #{$spacing-unit});
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
